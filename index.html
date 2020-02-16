@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Formulário</title>
+        <link rel="stylesheet" tipe="text/css" href="estilo.css">
+        <style>
+        h1{
+            font-size: 50px;
+            margin: 0px;
+        }
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        div{
+            width: 100%;
+            position: relative;
+            font: 1em Times New Roman Georgia;
+        }
+        form{
+            background-color: rgb(195, 201, 201);
+            width: 50%;
+            padding: 10px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .formas{
+           width: 95%; 
+           font-size: 15px;
+           padding: 10px;
+        }
+        .botão{
+            background-color:rgb(38, 106, 143); 
+            color: white;border-color: white ;
+            border-radius: 5px;
+            font-size: 15px;
+            width: 30%;
+            padding: 2%;
+        }
+        @media (max-width: 980px){
+            h1{
+                font-size: 120px;
+            }
+            div{
+                text-align: center;
+                width: 100%;
+                height: 100%;
+                position: relative;
+                font: 1em Times New Roman Georgia;
+                
+            }
+            form{
+                background-color: rgb(195, 201, 201);
+                width: 100%;
+                height: 100%;
+                font-size: 50px;
+                
+            } 
+            .formas{
+                width: 95%; 
+                font-size: 50px;
+                padding: 20px;
+            }
+            .botão{
+            background-color:rgb(38, 106, 143); 
+            color: white;border-color: white ;
+            border-radius: 5px;
+            font-size: 50px;
+            width: 100%;
+            padding: 2%;
+            margin: 0px;
+            }
+        }
+        </style>
+    </head>
+<body>
+<div>
+    <form>
+    <h1>Contato</h1><br><br>
+    <input type="text" id="nome" placeholder="Informe o seu nome" class="formas"required><br><br>
+    <input type="email" id="email" placeholder="Informe o seu E-mail"class="formas"required><br><br>
+    <input type="text" id="assunto" placeholder="Informe o assunto"class="formas" required><br><br>
+
+    <textarea name="message" rows="10" class="formas" placeholder="Deixe sua mensagem"></textarea> <br><br>
+  
+    <input type="submit" id="buttom" class="botão" >
+    <br><br>
+</form>
+
+</div>
+</body>
+</html>
